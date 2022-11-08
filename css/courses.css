@@ -1,0 +1,122 @@
+.welcome {
+  background-color: var(--bg-primary);
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome h1 {
+  text-align: center;
+}
+
+.courses h2 {
+  text-align: center;
+  margin: var(--spacing-large) 0;
+}
+
+.courses .main-paragraph {
+  margin: 0 var(--spacing-small) var(--spacing-large);
+  text-align: center;
+  padding: 0 var(--spacing-medium);
+}
+
+.courses .container {
+  padding: var(--spacing-medium) var(--spacing-small);
+}
+
+.courses .courses-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: var(--spacing-large);
+}
+
+.courses .course-wrapper {
+  width: calc(100% / 3);
+  padding: 0 var(--spacing-small);
+}
+
+.courses .course {
+  width: 100%;
+  padding: var(--spacing-tiny);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: var(--spacing-medium);
+}
+
+.courses .course .img-top {
+  width: 100%;
+  height: auto;
+  margin-bottom: var(--spacing-large);
+}
+
+.courses .course .content {
+  padding: 0 var(--spacing-small);
+}
+
+.courses .course h3 {
+  margin-bottom: var(--spacing-medium);
+  color: var(--text-primary);
+}
+
+.courses .course .certification {
+  margin-bottom: var(--spacing-medium);
+  font-size: var(--fs-medium);
+  color: #666;
+}
+
+.courses .course .microsoft {
+  margin-left: var(--spacing-small);
+  width: 80px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.courses .course .details {
+  margin-bottom: var(--spacing-medium);
+}
+
+.courses .course .date,
+.courses .course .duration,
+.courses .course .hours {
+  font-size: var(--fs-medium);
+  color: #666;
+}
+
+.courses .course .duration,
+.courses .course .hours {
+  margin-left: var(--spacing-small);
+}
+
+.courses .course .material-icons {
+  font-size: var(--fs-medium);
+  vertical-align: middle;
+}
+
+.courses .course a {
+  font-size: var(--fs-medium);
+  text-align: center;
+  color: var(--text-white);
+  background-color: var(--button-color);
+  border: 1px solid var(--button-color);
+  border-radius: 5px;
+  padding: var(--spacing-tiny);
+  width: 100px;
+  margin-bottom: var(--spacing-medium);
+}
+
+@media screen and (max-width: 768px) {
+  .welcome h1 {
+    font-size: 2rem;
+  }
+
+  .courses .courses-container .course-wrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .courses .course-wrapper {
+    width: 50%;
+  }
+}

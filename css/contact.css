@@ -1,0 +1,127 @@
+.welcome {
+  background-color: var(--bg-primary);
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome h1 {
+  text-align: center;
+}
+
+.contact .container {
+  padding: var(--spacing-medium);
+}
+
+.contact h2 {
+  margin-bottom: var(--spacing-large);
+  text-align: center;
+  padding-top: var(--spacing-large);
+}
+
+.contact .main-paragraph {
+  margin-bottom: var(--spacing-large);
+  color: var(--text-dark);
+}
+
+.contact .contact-wrapper {
+  display: flex;
+  margin-bottom: var(--spacing-large);
+}
+
+.contact ul,
+.contact form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-medium);
+}
+
+.contact ul li {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: var(--spacing-small);
+  margin-bottom: var(--spacing-large);
+  border-bottom: 1px solid #ddd;
+}
+
+.contact ul li .description {
+  color: #8e8e8e;
+}
+
+.contact .material-icons {
+  color: var(--text-primary);
+  vertical-align: middle;
+}
+
+.contact a {
+  color: #8e8e8e;
+  font-size: var(--fs-medium);
+}
+
+.contact a:hover {
+  color: var(--text-dark);
+}
+
+.contact label {
+  margin-bottom: var(--spacing-tiny);
+  font-size: var(--fs-medium);
+  color: var(--text-dark);
+}
+
+.contact input,
+.contact textarea {
+  padding: var(--spacing-small);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: var(--spacing-medium);
+  font-size: var(--fs-medium);
+}
+
+.contact input::placeholder {
+  color: #8e8e8e;
+}
+
+.contact textarea {
+  height: 100px;
+}
+
+.contact input[type="submit"] {
+  font-size: var(--fs-medium);
+  text-align: center;
+  color: var(--text-white);
+  background-color: var(--button-color);
+  border: 1px solid var(--button-color);
+  border-radius: 5px;
+  padding: var(--spacing-small);
+  width: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .welcome h1 {
+    font-size: 2rem;
+  }
+
+  .contact .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .contact ul,
+  .contact form {
+    width: 100%;
+    padding: 0;
+  }
+
+  .contact ul li {
+    margin-bottom: var(--spacing-medium);
+  }
+
+  .contact input[type="submit"] {
+    margin-bottom: 0;
+  }
+
+  .contact li:last-of-type {
+    margin-bottom: var(--spacing-large);
+  }
+}
